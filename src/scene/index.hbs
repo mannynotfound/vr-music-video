@@ -1,0 +1,30 @@
+<a-scene id="aframe-project" 
+  auto-enter-vr 
+  inspector="url: https://aframe.io/releases/0.3.0/aframe-inspector.min.js">
+  <!-- assets + templates -->
+  <a-assets id="assets">
+    <img src="https://img.gs/bbdkhfbzkk/2048x1024,stretch/http://i.imgur.com/WMNH2OF.jpg" id="chrome" crossorigin="anonymous">
+    <audio id="song" src="assets/audio/swang.mp3" preload="auto"></audio>
+  </a-assets>
+
+  <!-- camera + cursor -->
+  {{> camera}}
+
+  <!-- sky -->
+  <a-gradient-sky material="shader: gradient; topColor: 235 210 243; bottomColor: 180 251 255;"></a-gradient-sky>
+
+  <!--<a-box 
+    id="lyrics-container"
+    center-children
+    wireframe 
+    position="0 0 -3.5" 
+    width="8" 
+    height="5" 
+    depth="0.3">
+    <a-entity 
+      id="lyrics"
+      scale="0.6 1.2 1" 
+      text-geometry="value: SWANG; bevelEnabled: true; bevelSize: 0.1; bevelThickness: 0.1; curveSegments: 1; size: 1.5; height: 0.5;" 
+      material="color:pink; metalness:0.9; roughness: 0.05; sphericalEnvMap: #chrome;"></a-entity>
+  </a-box> -->
+</a-scene>
